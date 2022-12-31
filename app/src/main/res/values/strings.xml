@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Fitness Workout</string>
+    <string name="jumingjack">Start with your feet together and your arms by your sides, then jump up with your feet apart and your hands overhead.
+        Return to the start position then do the next rep.
+        his exercise provides a full-body workout and works all your large muscle groups.</string>
+    <string name="inclinepushup">Start in the regular push-up position but with your hands elevated on a chair or bench.
+        Then push your body up down using yourarm strength.
+        Remember to keep your body straight.</string>
+    <string name="kneepushup">let your knees touch the floor and raise your feet up off the floor.
+        Next push your body up and down.</string>
+    <string name="pushup">Lay prone on the ground with arms supporting your body.
+        Keep your body straight while raising and lowering your body with your armsThis exercise works the chest, shoulders, triceps, back and legs.</string>
+    <string name="widearmpushup">Start in the regular push-up position but with your hands spread wider than your shoulders.
+        Then push your body up and down.
+        Remember to keep your body straight.</string>
+    <string name="cobrastrecth">Lie down on your stomach and bend your elbows with your hands beneath your shouldersThen push your chest up off the ground as far as possible.
+        Hold this position for seconds.</string>
+    <string name="cheststretch">Find a doorway, take a lunge position in the doorway with your arms on the doorframe and your elbows a little lower than your shoulders, then slowly bring your chest forward.
+        Hold this position for 30-40 seconds.
+        Then slowly come out of it, bring your arms down and do a couple of shoulder rolls.</string>
+    <string name="armraises">Stand on the floor with your arms extended straight forward at shoulder height.
+        Raise your arms above your head.Return</string>
+    <string name="sidearmraises">Stand with your feet shoulder width apartRaise your arms to the sides at shoulder height, then put them down.
+        Repeat the exercise.Keep your arms straight during the exercise.</string>
+    <string name="tricepsdips">For the start position, sit on the chair.
+        Then move your hip off the chair with your hands holding the edge of the chair.
+        Slowly bend and stretch your arms to make your body go up and down.
+        This is a great exercise for the triceps.</string>
+    <string name="armcirclesclickwise">Stand on the floor with your arms extended straight out to the sides at shoulder height.
+        Move your arms clockwise in circles fast.
+        Try to do it as fast as you can.
+        It a great exercise for the deltoid muscle.</string>
+    <string name="armcirclescounterclickwise">Stand on the floor with your arms extended straight out to the sides at shoulder height.
+        Move your arms counterclockwise in circlesfast.
+        Try to do it as fast as you can.
+        It a great exercise for the deltoid muscle. </string>
+    <string name="diamondpushups">Start in the push-up position.
+        Make a diamond shape with your forefingers and thumbs together under your chest.
+        Then push your body up and down.
+        Remember to keep your body straight.</string>
+    <string name="chestpresspulse">Hold your forearms together at shoulder height and bend your elbows with your hands together to make an L shape.
+        Then lift your forearms up and down.</string>
+    <string name="legbrbellcurlleft">Stand against a wall.
+        Lift your right leg up, lean forward and grab underneath your right ankle with your left hand.
+        Bring the ankle up towards the shoulder as much as you can, then lower it and repeat the exercise.</string>
+    <string name="legbrbellcurlright">Stand against a wall.
+        Lift your left leg up, lean forward and grab underneath your left ankle with your right hand.
+        Bring the ankle up towards the shoulder as much as you can, then lower it and repeat the exercise.</string>
+    <string name="diagonalplank">Start in the straight arm plank position.
+        Lift your right arm and left leg until they are parallel with the ground.
+        Return to the start position and repeat with the other side.</string>
+    <string name="punches">Stand with one of your legs forward and your knees bent slightly.
+        Bend your elbows and clench your fists in front of your face.
+        Extend one arm forward with the palm facing the floor.
+        Take the arm back and repeat with the other arm.</string>
+    <string name="pushupspushups">Lay prone on the ground with arms supporting your body.
+        Keep your body straight while raising and lowering your body with your arms.
+        This exercise works the chest, shoulders, triceps, back and legs.</string>
+    <string name="inchworms">Start with your feet shoulder width apart.
+        Bend your body and walk your hands in front of you as far as you can, then walk your hands back.
+        Repeat the exercise.</string>
+    <string name="wallpushups">Stand in front of a wall one big step away from it.
+        Then put your hands out straight towards the wall and lean against it.
+        Lift your heels.
+        Slowly bend your elbows and press your upper body towards the wall.
+        Push back and repeat the exercise.
+        Remember to keep your body straight.</string>
+    <string name="tricepsstretchleft">Put your left hand on your back, use your right hand to grab your left elbow and gently pull it.
+        Hold this position for a few seconds.</string>
+    <string name="tricepsstretchright">Put your right hand on your back, use your left hand to grab your right elbow and gently pull it.
+        Hold this position for a few seconds.</string>
+    <string name="standingbicepsstretchleft">LEFT Stand with your left arm close to a wall.
+        Extend your left arm and put your left handon the wall, then gently turn your body to theright.</string>
+    <string name="standingbicepsstretchright">RIGHT Stand with your right arm close to a wall.
+        Extend your right arm and put your righthand on the wall, then gently turn your bodyto the left.</string>
+    <string name="abodominalcrunches">Lie on your back with your knees bent andyour arms stretched forward.
+        Then lift your upper body off the floor.
+        Hold for a few seconds and slowly return.
+        It primarily works the rectus abdominis muscle and the obliques.</string>
+    <string name="russiantwist">Sit on the floor with your knees bent, feet lifted a little bit and back tilted backwards.
+        Then hold your hands together and twistfrom side to side.</string>
+    <string name="mountainclimber">Start in the push-up position.
+        Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other.This exercise strengthens multiple muscle groups.</string>
+    <string name="heeltouch">Lie on the ground with your legs bent andyour arms by your sides.
+        Slightly lift your upper body off the floor and make your hands alternately reach yourheels.</string>
+    <string name="legraises">Lie down on your back, and put your hands beneath your hips for support.
+        Then lift your legs up until they form a rightangle with the floor.
+        Slowly bring your legs back down and repeat the exercise.</string>
+    <string name="plank">Lie on the floor with your toes and forearms on the ground.
+        Keep your body straight and hold this position as long as you can.
+        This exercise strengthens the abdomen,back and shoulders.</string>
+    <string name="spinelumbertwiststretchleft">Lie on your back with your legs extended.
+        Lift your left leg up and use your right hand to pull your left knee to the right, but keep your other arm extended to the side on the floor.
+        Hold this position for a few seconds.</string>
+    <string name="spinelumbertwiststretchright">Lie on your back with your legs extended.
+        Lift your right leg up and use your left hand to pull your right knee to the left, but keep your other arm extended to the side on the floor.
+        Hold this position for a few seconds.</string>
+    <string name="sidehop">Stand on the floor, put your hands in front of you and hop from side to side.</string>
+    <string name="squats">Stand with your feet shoulder width apart and your arms stretched forward, then lower your body until your thighs are parallel with the floor.
+        Your knees should be extended in the same direction as your toes.
+        Return to the start position and do the next rep.
+        This works the thighs, hips buttocks, quads, hamstrings and lower body.</string>
+    <string name="sidelayinglegliftleft">Lie down on your side with your head rested on your right arm.
+        Lift your upper leg up and return to the start position.
+        Make sure your left leg goes straight up anddown during the exercise.
+        Its a great exercise for the gluteus.</string>
+    <string name="sidelayinglegliftright">Lie down on your side with your head rested on your left arm.
+        Lift your upper leg up and return to the start position.
+        Make sure your right leg goes straight up and down during the exercise.
+        Its a great exercise for the gluteus.</string>
+    <string name="backwarglunge">Stand with your feet shoulder width apart and your hands on your hips.
+        Step a big step backward with your right leg and lower your body until your left thigh is parallel to the floor.
+        Return and repeat with the other side.</string>
+    <string name="donkeykicksleft">Start on all fours with your knees under your butt and your hands under your shoulders.
+        Then lift your left leg and squeeze your butt as much as you can.
+        Go back to the startposition and repeat the exercise.</string>
+    <string name="donkeykicksright">Start on all fours with your knees under butt and your hands under shoulders.
+        Then lift your right leg and squeeze your butt as much as you can.
+        Go back to the startposition and repeat the exercise.</string>
+
+
+</resources>
