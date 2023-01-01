@@ -22,6 +22,7 @@
                 android:layout_height="100dp"
                 app:lottie_rawRes="@raw/armcirclesclickwise"
                 android:layout_margin="10dp"
+                app:lottie_repeatMode="reverse"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 />
