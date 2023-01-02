@@ -5,10 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Showdata">
+    tools:context=".Maleshowdata">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EX name"
@@ -20,6 +42,7 @@
 
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
@@ -30,6 +53,7 @@
         />
 
     <TextView
+        android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start_in_the_regular_push_up_position_but_with_your_hands_elevated_on_a_chair_or_bench_then_push_your_body_up_down_using_yourarm_strength_remember_to_keep_your_body_straight"
