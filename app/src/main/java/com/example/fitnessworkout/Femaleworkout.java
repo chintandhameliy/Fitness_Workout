@@ -31,6 +31,7 @@ public class Femaleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent fullbody = new Intent(Femaleworkout.this, Fullbody.class);
                 startActivity(fullbody);
+                finish();
             }
         });
 
@@ -39,6 +40,7 @@ public class Femaleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent leg = new Intent(Femaleworkout.this, Leg.class);
                 startActivity(leg);
+                finish();
             }
         });
 
@@ -47,6 +49,7 @@ public class Femaleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent arm = new Intent(Femaleworkout.this, Arm.class);
                 startActivity(arm);
+                finish();
             }
         });
 
@@ -55,6 +58,7 @@ public class Femaleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent abs = new Intent(Femaleworkout.this, Abs.class);
                 startActivity(abs);
+                finish();
             }
         });
 
@@ -63,6 +67,7 @@ public class Femaleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent butt = new Intent(Femaleworkout.this, Chest.class);
                 startActivity(butt);
+                finish();
             }
         });
     }

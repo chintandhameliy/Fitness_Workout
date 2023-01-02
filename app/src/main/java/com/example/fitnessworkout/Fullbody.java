@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -16,16 +18,27 @@ public class Fullbody extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<Choiseclass> arrayList = new ArrayList();
     Button start;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullbody);
         start=findViewById(R.id.button);
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(Fullbody.this,Maleworkout.class);
+                startActivity(back);
+                finish();
+            }
+        });
         Intent intent=new Intent(getApplicationContext(),Exercise.class);
         if(getActionBar()!= null)
         {
             getActionBar().hide();
         }
+
 
         recyclerView = findViewById(R.id.recyclerView);
 

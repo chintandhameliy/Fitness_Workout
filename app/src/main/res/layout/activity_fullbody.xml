@@ -9,78 +9,52 @@
     android:orientation="vertical"
     tools:context=".Fullbody">
 
-
-    <ScrollView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/fullbody"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:background="@drawable/male_fullbody">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:text="FULL BODY"
-                    android:textColor="@color/white"
-                    android:textSize="35dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
-    </ScrollView>
-
-
-
-
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#A2D2FF"
-            android:layout_alignParentBottom="true"
             >
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/button"
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:text="start"
+                android:text="FULL BODY"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                app:cornerRadius="20dp"
-                android:backgroundTint="@color/black"
-                android:layout_marginEnd="20dp"/>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+                android:layout_margin="10dp"/>
+        </LinearLayout>
 
+    </androidx.cardview.widget.CardView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/image" />
 
-
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="start"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
