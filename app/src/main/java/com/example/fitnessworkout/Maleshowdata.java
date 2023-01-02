@@ -28,7 +28,7 @@ public class Maleshowdata extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent back  = new Intent(Maleshowdata.this,Maleworkout.class);
+                Intent back  = new Intent(Maleshowdata.this,Fullbody.class);
                 startActivity(back);
                 finish();
             }
