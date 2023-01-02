@@ -14,6 +14,9 @@
         android:theme="@style/Theme.FitnessWorkout"
         tools:targetApi="31">
         <activity
+            android:name=".Showdata"
+            android:exported="false" />
+        <activity
             android:name=".Exercise"
             android:exported="false">
             <meta-data
