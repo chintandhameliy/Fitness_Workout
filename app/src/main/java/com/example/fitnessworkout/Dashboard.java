@@ -29,6 +29,11 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent male = new Intent(Dashboard.this,Maleworkout.class);
+                male.putExtra("fullBody",R.drawable.male_fullbody);
+                male.putExtra("arm",R.drawable.male_arm);
+                male.putExtra("chest",R.drawable.male_chest);
+                male.putExtra("abs",R.drawable.male_abs);
+                male.putExtra("leg",R.drawable.male_leg);
                 startActivity(male);
             }
         });
@@ -36,7 +41,12 @@ public class Dashboard extends AppCompatActivity {
         female.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent female = new Intent(Dashboard.this,Femaleworkout.class);
+                Intent female = new Intent(Dashboard.this,Maleworkout.class);
+                female.putExtra("fullBody",R.drawable.female_fullbody);
+                female.putExtra("arm",R.drawable.female_arm);
+                female.putExtra("chest",R.drawable.female_butt);
+                female.putExtra("abs",R.drawable.female_abs);
+                female.putExtra("leg",R.drawable.female_leg);
                 startActivity(female);
             }
         });

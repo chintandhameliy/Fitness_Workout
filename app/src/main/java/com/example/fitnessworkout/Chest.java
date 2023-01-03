@@ -10,10 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.android.material.button.MaterialButton;
+
 import java.util.ArrayList;
 
 public class Chest extends AppCompatActivity {
-    Button start;
+    MaterialButton start;
     RecyclerView recyclerView;
     ArrayList<Choiseclass> arrayList = new ArrayList();
     ImageView back;

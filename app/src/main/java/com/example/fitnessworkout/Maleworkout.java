@@ -26,7 +26,13 @@ public class Maleworkout extends AppCompatActivity {
         abs = findViewById(R.id.abs);
         chest = findViewById(R.id.chest);
         leg = findViewById(R.id.leg);
+        Intent setImages=getIntent();
 
+        fullbody.setBackgroundResource(setImages.getIntExtra("fullBody",0));
+        arm.setBackgroundResource(setImages.getIntExtra("arm",0));
+        chest.setBackgroundResource(setImages.getIntExtra("chest",0));
+        leg.setBackgroundResource(setImages.getIntExtra("leg",0));
+        abs.setBackgroundResource(setImages.getIntExtra("abs",0));
         fullbody.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
