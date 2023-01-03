@@ -39,7 +39,7 @@ public class Fullbody extends AppCompatActivity {
             getActionBar().hide();
         }
 
-        Intent intent=new Intent(this,Exercise.class);
+        Intent intent=new Intent(getApplicationContext(),Exercise.class);
         recyclerView = findViewById(R.id.recyclerView);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -56,12 +56,11 @@ public class Fullbody extends AppCompatActivity {
         arrayList.add(new Choiseclass(R.raw.widearmpushups,"WIDE ARM PUSH-UPS","X8",R.string.widearmpushup));
         arrayList.add(new Choiseclass(R.raw.cobrastretch,"COBRA STRETCH","00:20",R.string.cobrastrecth));
         arrayList.add(new Choiseclass(R.raw.cheststretch,"CHEST STRETCH","00:20",R.string.cheststretch));
-
+        ChoiseAdapter adapter = new ChoiseAdapter(this,arrayList);
+        recyclerView.setAdapter(adapter);
         int [] resources={R.raw.jumpingjacks,R.raw.inclinepushups,R.raw.kneepushups,R.raw.pushups,R.raw.widearmpushups,R.raw.inclinepushups,R.raw.kneepushups,R.raw.pushups,R.raw.widearmpushups,R.raw.cobrastretch,R.raw.cheststretch};
         String [] name={"JUMPING JACK","INCLINE PUSH-UPS","KNEE PUSH-UPS","PUSH-UPS","WIDE ARM PUSH-UPS","INCLINE PUSH-UPS","KNEE PUSH-UPS","PUSH-UPS","WIDE ARM PUSH-UPS","COBRA STRETCH","CHEST STRETCH"};
         String [] duration={"00:20","X16","X10","X8","X8","X16","X10","X8","X8","00:20","00:20"};
-        ChoiseAdapter adapter = new ChoiseAdapter(this,arrayList);
-        recyclerView.setAdapter(adapter);
         intent.putExtra("resources",resources);
         intent.putExtra("name",name);
         intent.putExtra("duration",duration);
