@@ -33,6 +33,14 @@ public class Maleshowdata extends AppCompatActivity {
                 finish();
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back  = new Intent(Maleshowdata.this,Arm.class);
+                startActivity(back);
+                finish();
+            }
+        });
 
         Intent card = getIntent();
         name.setText(card.getStringExtra("Name"));
