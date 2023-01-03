@@ -67,7 +67,9 @@ public class Fullbody extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(intent);
+
             }
         });
 
