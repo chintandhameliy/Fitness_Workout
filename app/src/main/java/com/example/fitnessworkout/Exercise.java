@@ -1,13 +1,13 @@
 package com.example.fitnessworkout;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -52,7 +52,6 @@ next.setOnClickListener(new View.OnClickListener() {
         checking(index);
         exeName.setText(name[index]);
         image.setAnimation(resources[index]);
-        image.resumeAnimation();
         textView.setText(duration[index]);
         previous.setVisibility(View.VISIBLE);
         if (index==duration.length-1){
@@ -68,7 +67,7 @@ previous.setOnClickListener(new View.OnClickListener() {
        checking(index);
         exeName.setText(name[index]);
         image.setAnimation(resources[index]);
-        image.resumeAnimation();
+
         textView.setText(duration[index]);
         next.setVisibility(View.VISIBLE);
         if (index==0){
@@ -136,11 +135,7 @@ previous.setOnClickListener(new View.OnClickListener() {
 
         }
        else if (duration[a].startsWith("X")){
-
-           if(!now)
-            {
-                countDownTimer.cancel();
-            }
+           countDownTimer.cancel();
            start.setVisibility(View.INVISIBLE);
            reset.setVisibility(View.INVISIBLE);
 

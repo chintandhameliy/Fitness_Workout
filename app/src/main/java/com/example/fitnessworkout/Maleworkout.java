@@ -32,6 +32,7 @@ public class Maleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent fullbody = new Intent(Maleworkout.this, Fullbody.class);
                 startActivity(fullbody);
+                finish();
             }
         });
 
@@ -40,6 +41,7 @@ public class Maleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent arm = new Intent(Maleworkout.this, Arm.class);
                 startActivity(arm);
+                finish();
             }
         });
 
@@ -48,6 +50,7 @@ public class Maleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent abs = new Intent(Maleworkout.this, Abs.class);
                 startActivity(abs);
+                finish();
             }
         });
 
@@ -56,6 +59,7 @@ public class Maleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent chest = new Intent(Maleworkout.this, Chest.class);
                 startActivity(chest);
+                finish();
             }
         });
 
@@ -64,6 +68,7 @@ public class Maleworkout extends AppCompatActivity {
             public void onClick(View view) {
                 Intent leg = new Intent(Maleworkout.this, Leg.class);
                 startActivity(leg);
+                finish();
             }
         });
     }

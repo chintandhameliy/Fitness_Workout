@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -15,12 +16,23 @@ public class Abs extends AppCompatActivity {
 Button start;
     RecyclerView recyclerView;
     ArrayList<Choiseclass> arrayList = new ArrayList();
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abs);
-        start=findViewById(R.id.start);
+        start=findViewById(R.id.button);
+
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(Abs.this,Maleworkout.class);
+                startActivity(back);
+                finish();
+            }
+        });
         if(getActionBar()!= null)
         {
             getActionBar().hide();

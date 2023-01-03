@@ -1,15 +1,13 @@
 package com.example.fitnessworkout;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.graphics.ColorSpace;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -50,20 +48,12 @@ public class ChoiseAdapter extends RecyclerView.Adapter<ChoiseAdapter.ViewHolder
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder bulider = new AlertDialog.Builder(view.getRootView().getContext());
-                View dialogView = LayoutInflater.from(view.getRootView().getContext()).inflate(R.layout.custom_dialog,null);
-                LottieAnimationView armcirclesclickwise;
-                TextView tv1,desc;
+                Intent card = new Intent(context, Maleshowdata.class);
+                card.putExtra("Animation",arrlist.get(position).image);
+                card.putExtra("Name",arrlist.get(position).name);
+                card.putExtra("Description",arrlist.get(position).desc);
+                context.startActivity(card);
 
-                armcirclesclickwise = dialogView.findViewById(R.id.armcirclesclickwise);
-                tv1 = dialogView.findViewById(R.id.tv1);
-                desc = dialogView.findViewById(R.id.desc);
-                armcirclesclickwise.setAnimation(arrlist.get(position).getImage());
-                tv1.setText(arrlist.get(position).getName());
-                desc.setText(arrlist.get(position).getDesc());
-                bulider.setView(dialogView);
-                bulider.setCancelable(true);
-                bulider.show();
 
             }
         });
