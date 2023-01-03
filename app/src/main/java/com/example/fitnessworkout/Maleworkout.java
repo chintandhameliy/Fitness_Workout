@@ -27,16 +27,25 @@ public class Maleworkout extends AppCompatActivity {
         chest = findViewById(R.id.chest);
         leg = findViewById(R.id.leg);
         Intent setImages=getIntent();
-
-        fullbody.setBackgroundResource(setImages.getIntExtra("fullBody",0));
-        arm.setBackgroundResource(setImages.getIntExtra("arm",0));
-        chest.setBackgroundResource(setImages.getIntExtra("chest",0));
-        leg.setBackgroundResource(setImages.getIntExtra("leg",0));
-        abs.setBackgroundResource(setImages.getIntExtra("abs",0));
+        int fullBodyR=setImages.getIntExtra("fullBody",0);
+        int armR=setImages.getIntExtra("arm",0);
+        int chestR=setImages.getIntExtra("chest",0);
+        int legR=setImages.getIntExtra("leg",0);
+        int absR=setImages.getIntExtra("abs",0);
+        fullbody.setBackgroundResource(fullBodyR);
+        arm.setBackgroundResource(armR);
+        chest.setBackgroundResource(chestR);
+        leg.setBackgroundResource(legR);
+        abs.setBackgroundResource(absR);
         fullbody.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent fullbody = new Intent(Maleworkout.this, Fullbody.class);
+                fullbody.putExtra("fullBody",fullBodyR);
+                fullbody.putExtra("arm",armR);
+                fullbody.putExtra("chest",chestR);
+                fullbody.putExtra("leg",legR);
+                fullbody.putExtra("abs",absR);
                 startActivity(fullbody);
                 finish();
             }
@@ -46,6 +55,11 @@ public class Maleworkout extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent arm = new Intent(Maleworkout.this, Arm.class);
+                arm.putExtra("fullBody",fullBodyR);
+                arm.putExtra("arm",armR);
+                arm.putExtra("chest",chestR);
+                arm.putExtra("leg",legR);
+                arm.putExtra("abs",absR);
                 startActivity(arm);
                 finish();
             }
@@ -55,6 +69,9 @@ public class Maleworkout extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent abs = new Intent(Maleworkout.this, Abs.class);
+                abs.putExtra("fullBody",fullBodyR);
+                abs.putExtra("chest",chestR);
+                abs.putExtra("abs",absR);
                 startActivity(abs);
                 finish();
             }
@@ -64,6 +81,11 @@ public class Maleworkout extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent chest = new Intent(Maleworkout.this, Chest.class);
+                chest.putExtra("fullBody",fullBodyR);
+                chest.putExtra("arm",armR);
+                chest.putExtra("chest",chestR);
+                chest.putExtra("leg",legR);
+                chest.putExtra("abs",absR);
                 startActivity(chest);
                 finish();
             }
@@ -73,6 +95,11 @@ public class Maleworkout extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent leg = new Intent(Maleworkout.this, Leg.class);
+                leg.putExtra("fullBody",fullBodyR);
+                leg.putExtra("arm",armR);
+                leg.putExtra("chest",chestR);
+                leg.putExtra("leg",legR);
+                leg.putExtra("abs",absR);
                 startActivity(leg);
                 finish();
             }

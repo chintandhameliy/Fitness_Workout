@@ -25,10 +25,21 @@ public class Leg extends AppCompatActivity {
         setContentView(R.layout.activity_leg);
         start=findViewById(R.id.button);
         back = findViewById(R.id.back);
+        Intent image = getIntent();
+        int fullBody=image.getIntExtra("fullBody",0);
+        int arm=image.getIntExtra("arm",0);
+        int leg=image.getIntExtra("leg",0);
+        int abs=image.getIntExtra("abs",0);
+        int chest=image.getIntExtra("chest",0);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent back = new Intent(Leg.this,Maleworkout.class);
+                back.putExtra("fullBody",fullBody);
+                back.putExtra("arm",arm);
+                back.putExtra("abs",abs);
+                back.putExtra("chest",chest);
+                back.putExtra("leg",leg);
                 startActivity(back);
                 finish();
             }
